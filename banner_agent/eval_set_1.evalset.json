@@ -1,0 +1,348 @@
+{
+  "eval_set_id": "eval_set_1",
+  "name": "eval_set_1",
+  "eval_cases": [
+    {
+      "eval_id": "What_are_interesting_matches_in_La_Liga_and_Bri",
+      "conversation": [
+        {
+          "invocation_id": "e-7a9721d1-d69c-4683-8069-ac4d87b2b551",
+          "user_content": {
+            "parts": [
+              {
+                "text": "What are interesting matches in La Liga and British Premier League?"
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "text": "Here's a promotional banner for the Barcelona vs. Real Betis match! Get a 100% bonus up to $100 with code BONUS10. It’s overcast in Barcelona, with the iconic Sagrada Familia in the background. Barcelona is a strong favorite at 1.34 odds, while a Real Betis win is at 7.4. Don't miss the action!"
+              }
+            ],
+            "role": "model"
+          },
+          "intermediate_data": {
+            "invocation_events": [
+              {
+                "author": "banner_personalization_agent",
+                "content": {
+                  "parts": [
+                    {
+                      "function_call": {
+                        "id": "adk-0b787cce-5019-401e-9507-3341938e9184",
+                        "args": {
+                          "league_key": "soccer_spain_la_liga"
+                        },
+                        "name": "get_upcoming_matches"
+                      }
+                    }
+                  ],
+                  "role": "model"
+                }
+              },
+              {
+                "author": "banner_personalization_agent",
+                "content": {
+                  "parts": [
+                    {
+                      "function_response": {
+                        "id": "adk-0b787cce-5019-401e-9507-3341938e9184",
+                        "name": "get_upcoming_matches",
+                        "response": {
+                          "league_key": "soccer_spain_la_liga",
+                          "credits_remaining": "470",
+                          "matches": [
+                            {
+                              "event_id": "759a4cd330a0532d26296c10f4f437ea",
+                              "home_team": "Oviedo",
+                              "away_team": "Alavés",
+                              "commence_time": "2026-05-17T17:00:00Z"
+                            },
+                            {
+                              "event_id": "91681320408cb0522619de63ee8bc71d",
+                              "home_team": "Athletic Bilbao",
+                              "away_team": "Celta Vigo",
+                              "commence_time": "2026-05-17T17:00:00Z"
+                            },
+                            {
+                              "event_id": "c2cf3acc301546b4365ec327bcde7cf5",
+                              "home_team": "Atlético Madrid",
+                              "away_team": "Girona",
+                              "commence_time": "2026-05-17T17:00:00Z"
+                            },
+                            {
+                              "event_id": "5cb98b36a0238cc56079ce5dea71a8ee",
+                              "home_team": "CA Osasuna",
+                              "away_team": "Espanyol",
+                              "commence_time": "2026-05-17T17:00:00Z"
+                            },
+                            {
+                              "event_id": "47c838bae81e5dce90312fd5c188d28f",
+                              "home_team": "Elche CF",
+                              "away_team": "Getafe",
+                              "commence_time": "2026-05-17T17:00:00Z"
+                            },
+                            {
+                              "event_id": "7831d6b48dc00cc816d976be80644a46",
+                              "home_team": "Levante",
+                              "away_team": "Mallorca",
+                              "commence_time": "2026-05-17T17:00:00Z"
+                            },
+                            {
+                              "event_id": "1212ab947fa2164c9da497e01ea4c4af",
+                              "home_team": "Rayo Vallecano",
+                              "away_team": "Villarreal",
+                              "commence_time": "2026-05-17T17:00:00Z"
+                            },
+                            {
+                              "event_id": "284021ef84cefaab8089c4630eaf0acc",
+                              "home_team": "Sevilla",
+                              "away_team": "Real Madrid",
+                              "commence_time": "2026-05-17T17:00:00Z"
+                            },
+                            {
+                              "event_id": "5e7091737af6a48716cf66a77980d8af",
+                              "home_team": "Real Sociedad",
+                              "away_team": "Valencia",
+                              "commence_time": "2026-05-17T17:00:00Z"
+                            },
+                            {
+                              "event_id": "fa6f7c8af78a278250a86ef8febd7cfb",
+                              "home_team": "Barcelona",
+                              "away_team": "Real Betis",
+                              "commence_time": "2026-05-17T19:15:00Z"
+                            }
+                          ]
+                        }
+                      }
+                    }
+                  ],
+                  "role": "user"
+                }
+              },
+              {
+                "author": "banner_personalization_agent",
+                "content": {
+                  "parts": [
+                    {
+                      "function_call": {
+                        "id": "adk-b76bd797-1925-46ee-8c6d-e236227bd579",
+                        "args": {
+                          "league_key": "soccer_epl"
+                        },
+                        "name": "get_upcoming_matches"
+                      }
+                    }
+                  ],
+                  "role": "model"
+                }
+              },
+              {
+                "author": "banner_personalization_agent",
+                "content": {
+                  "parts": [
+                    {
+                      "function_response": {
+                        "id": "adk-b76bd797-1925-46ee-8c6d-e236227bd579",
+                        "name": "get_upcoming_matches",
+                        "response": {
+                          "league_key": "soccer_epl",
+                          "credits_remaining": "470",
+                          "matches": [
+                            {
+                              "event_id": "616cd9236437862ceceb47b6aec4a004",
+                              "home_team": "Brentford",
+                              "away_team": "Crystal Palace",
+                              "commence_time": "2026-05-17T14:00:00Z"
+                            },
+                            {
+                              "event_id": "80dfd4c3675149dca21da2943420629a",
+                              "home_team": "Leeds United",
+                              "away_team": "Brighton and Hove Albion",
+                              "commence_time": "2026-05-17T14:00:00Z"
+                            },
+                            {
+                              "event_id": "bd38142035040006cfb0ca9d6e3ab2be",
+                              "home_team": "Everton",
+                              "away_team": "Sunderland",
+                              "commence_time": "2026-05-17T14:00:00Z"
+                            },
+                            {
+                              "event_id": "e0c6894a7376e3bacabd8e4c522a733e",
+                              "home_team": "Wolverhampton Wanderers",
+                              "away_team": "Fulham",
+                              "commence_time": "2026-05-17T14:00:00Z"
+                            },
+                            {
+                              "event_id": "f331171c7e14ee86e88f338343aa7f97",
+                              "home_team": "Newcastle United",
+                              "away_team": "West Ham United",
+                              "commence_time": "2026-05-17T16:30:00Z"
+                            },
+                            {
+                              "event_id": "818582ac502774aad4bb82309b9b85fa",
+                              "home_team": "Arsenal",
+                              "away_team": "Burnley",
+                              "commence_time": "2026-05-18T19:00:00Z"
+                            },
+                            {
+                              "event_id": "51ec3d5c2707905aed83785fe055ffb0",
+                              "home_team": "Bournemouth",
+                              "away_team": "Manchester City",
+                              "commence_time": "2026-05-19T18:30:00Z"
+                            },
+                            {
+                              "event_id": "f8183792f85edf341601f814e35773c8",
+                              "home_team": "Chelsea",
+                              "away_team": "Tottenham Hotspur",
+                              "commence_time": "2026-05-19T19:15:00Z"
+                            }
+                          ]
+                        }
+                      }
+                    }
+                  ],
+                  "role": "user"
+                }
+              },
+              {
+                "author": "banner_personalization_agent",
+                "content": {
+                  "parts": [
+                    {
+                      "function_call": {
+                        "id": "adk-b055ef29-2f5b-4fde-aaa5-269545d14e74",
+                        "args": {
+                          "league_key": "soccer_spain_la_liga",
+                          "event_id": "fa6f7c8af78a278250a86ef8febd7cfb"
+                        },
+                        "name": "get_match_odds"
+                      }
+                    }
+                  ],
+                  "role": "model"
+                }
+              },
+              {
+                "author": "banner_personalization_agent",
+                "content": {
+                  "parts": [
+                    {
+                      "function_response": {
+                        "id": "adk-b055ef29-2f5b-4fde-aaa5-269545d14e74",
+                        "name": "get_match_odds",
+                        "response": {
+                          "event_id": "fa6f7c8af78a278250a86ef8febd7cfb",
+                          "home_team": "Barcelona",
+                          "away_team": "Real Betis",
+                          "commence_time": "2026-05-17T19:15:00Z",
+                          "bookmaker": "Codere (IT)",
+                          "odds": {
+                            "home": 1.34,
+                            "away": 7.4,
+                            "draw": 6.0
+                          },
+                          "credits_remaining": "469"
+                        }
+                      }
+                    }
+                  ],
+                  "role": "user"
+                }
+              },
+              {
+                "author": "banner_personalization_agent",
+                "content": {
+                  "parts": [
+                    {
+                      "function_call": {
+                        "id": "adk-8c25b01c-e4c9-4b97-8ba0-8b921b96a555",
+                        "args": {
+                          "city": "Barcelona"
+                        },
+                        "name": "get_weather"
+                      }
+                    }
+                  ],
+                  "role": "model"
+                }
+              },
+              {
+                "author": "banner_personalization_agent",
+                "content": {
+                  "parts": [
+                    {
+                      "function_response": {
+                        "id": "adk-8c25b01c-e4c9-4b97-8ba0-8b921b96a555",
+                        "name": "get_weather",
+                        "response": {
+                          "city": "Barcelona",
+                          "phrase": "overcast in Barcelona",
+                          "temperature_c": 18.6,
+                          "condition": "overcast"
+                        }
+                      }
+                    }
+                  ],
+                  "role": "user"
+                }
+              },
+              {
+                "author": "banner_personalization_agent",
+                "content": {
+                  "parts": [
+                    {
+                      "function_call": {
+                        "id": "adk-8d75cf10-0f63-4b18-85b0-3de398ba2736",
+                        "args": {
+                          "home_team": "Barcelona",
+                          "away_team": "Real Betis",
+                          "kickoff_display": "17:15",
+                          "odds_home": 1.34,
+                          "odds_away": 7.4,
+                          "odds_draw": 6.0,
+                          "bonus_code": "BONUS10",
+                          "bonus_amount": "100%",
+                          "weather_phrase": "overcast in Barcelona",
+                          "skyline_landmark": "Sagrada Familia"
+                        },
+                        "name": "banner_image_agent"
+                      }
+                    }
+                  ],
+                  "role": "model"
+                }
+              },
+              {
+                "author": "banner_personalization_agent",
+                "content": {
+                  "parts": [
+                    {
+                      "function_response": {
+                        "id": "adk-8d75cf10-0f63-4b18-85b0-3de398ba2736",
+                        "name": "banner_image_agent",
+                        "response": {
+                          "result": ""
+                        }
+                      }
+                    }
+                  ],
+                  "role": "user"
+                }
+              }
+            ]
+          },
+          "creation_timestamp": 1779020210.3156009
+        }
+      ],
+      "session_input": {
+        "app_name": "banner_agent",
+        "user_id": "user"
+      },
+      "creation_timestamp": 1779020286.77908
+    }
+  ],
+  "creation_timestamp": 1779020194.2606
+}

@@ -1,0 +1,4 @@
+banner_agent/generated/
+.adk
+*pyc
+.env
